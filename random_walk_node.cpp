@@ -13,6 +13,7 @@
 #include <thread>
 #include "node.h"
 #include <unistd.h>
+#include "glm/vec3.hpp"
 using namespace std;
 using std::chrono::high_resolution_clock;
 using std::chrono::milliseconds;
@@ -47,7 +48,9 @@ void random_walk_node::update(double time){   //parameter time is in second
     this->y += this->getv()*sin(this->getd())*sin(this->getp())*time;
     this->z += this->getv()*cos(this->getp())*time;
 //        calc(id,this->x,this->y,this->z);
-    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
+    //printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
+    points[this->id] = glm::vec3(this->x, this->y, this->z);
+
 }
 
 void random_walk_node::reflect(int err){      //err: 1 XMIN 2 XMAX 3 YMIN 4 YMAX
@@ -94,7 +97,8 @@ void random_walk_node::run(){
     high_resolution_clock::time_point lastShow = lastUpdate;    //Time when random_walk_node info shown
     high_resolution_clock::time_point currentTime = high_resolution_clock::now();
     wholeTime = currentTime-baseTime;
-    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
+    //printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
+    points[this->id] = glm::vec3(this->x, this->y, this->z);
     //initial output
     while(running == true){
         currentTime = high_resolution_clock::now();

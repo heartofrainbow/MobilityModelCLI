@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MobilityModelCLI.dir/random_direction_node.cpp.o"
   "CMakeFiles/MobilityModelCLI.dir/random_waypoint_node.cpp.o"
   "CMakeFiles/MobilityModelCLI.dir/gauss_markov_node.cpp.o"
+  "CMakeFiles/MobilityModelCLI.dir/mobilitymodel.cpp.o"
   "MobilityModelCLI.pdb"
   "MobilityModelCLI"
 )

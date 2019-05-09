@@ -4,31 +4,149 @@
 CMakeFiles/MobilityModelCLI.dir/gauss_markov_node.cpp.o
  /home/nikki/CLionProjects/MobilityModelCLI/gauss_markov_node.cpp
  /home/nikki/CLionProjects/MobilityModelCLI/gauss_markov_node.h
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle_func.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/compute_vector_relational.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/qualifier.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/setup.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.inl
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./simd/platform.h
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/vec3.hpp
  /home/nikki/CLionProjects/MobilityModelCLI/node.h
  /home/nikki/CLionProjects/MobilityModelCLI/publicvar.h
 CMakeFiles/MobilityModelCLI.dir/main.cpp.o
- /home/nikki/CLionProjects/MobilityModelCLI/gauss_markov_node.h
  /home/nikki/CLionProjects/MobilityModelCLI/main.cpp
+ /home/nikki/CLionProjects/MobilityModelCLI/mobilitymodel.h
+CMakeFiles/MobilityModelCLI.dir/mobilitymodel.cpp.o
+ /home/nikki/CLionProjects/MobilityModelCLI/gauss_markov_node.h
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle_func.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/compute_vector_relational.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/qualifier.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/setup.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.inl
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./simd/platform.h
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/vec3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/mobilitymodel.cpp
+ /home/nikki/CLionProjects/MobilityModelCLI/mobilitymodel.h
  /home/nikki/CLionProjects/MobilityModelCLI/node.h
  /home/nikki/CLionProjects/MobilityModelCLI/publicvar.h
  /home/nikki/CLionProjects/MobilityModelCLI/random_direction_node.h
  /home/nikki/CLionProjects/MobilityModelCLI/random_walk_node.h
  /home/nikki/CLionProjects/MobilityModelCLI/random_waypoint_node.h
 CMakeFiles/MobilityModelCLI.dir/node.cpp.o
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle_func.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/compute_vector_relational.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/qualifier.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/setup.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.inl
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./simd/platform.h
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/vec3.hpp
  /home/nikki/CLionProjects/MobilityModelCLI/node.cpp
  /home/nikki/CLionProjects/MobilityModelCLI/node.h
  /home/nikki/CLionProjects/MobilityModelCLI/publicvar.h
 CMakeFiles/MobilityModelCLI.dir/random_direction_node.cpp.o
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle_func.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/compute_vector_relational.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/qualifier.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/setup.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.inl
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./simd/platform.h
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/vec3.hpp
  /home/nikki/CLionProjects/MobilityModelCLI/node.h
  /home/nikki/CLionProjects/MobilityModelCLI/publicvar.h
  /home/nikki/CLionProjects/MobilityModelCLI/random_direction_node.cpp
  /home/nikki/CLionProjects/MobilityModelCLI/random_direction_node.h
 CMakeFiles/MobilityModelCLI.dir/random_walk_node.cpp.o
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle_func.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/compute_vector_relational.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/qualifier.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/setup.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.inl
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./simd/platform.h
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/vec3.hpp
  /home/nikki/CLionProjects/MobilityModelCLI/node.h
  /home/nikki/CLionProjects/MobilityModelCLI/publicvar.h
  /home/nikki/CLionProjects/MobilityModelCLI/random_walk_node.cpp
  /home/nikki/CLionProjects/MobilityModelCLI/random_walk_node.h
 CMakeFiles/MobilityModelCLI.dir/random_waypoint_node.cpp.o
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/_swizzle_func.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/compute_vector_relational.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/qualifier.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/setup.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./detail/type_vec3.inl
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_bool3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_double3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_float3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_int3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./ext/vector_uint3_precision.hpp
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/./simd/platform.h
+ /home/nikki/CLionProjects/MobilityModelCLI/glm/vec3.hpp
  /home/nikki/CLionProjects/MobilityModelCLI/node.h
  /home/nikki/CLionProjects/MobilityModelCLI/publicvar.h
  /home/nikki/CLionProjects/MobilityModelCLI/random_waypoint_node.cpp

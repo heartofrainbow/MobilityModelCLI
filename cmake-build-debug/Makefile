@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/MobilityModelCLI.dir/build.make CMakeFiles/MobilityModelCLI.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mobilitymodel.o: mobilitymodel.cpp.o
+
+.PHONY : mobilitymodel.o
+
+# target to build an object file
+mobilitymodel.cpp.o:
+	$(MAKE) -f CMakeFiles/MobilityModelCLI.dir/build.make CMakeFiles/MobilityModelCLI.dir/mobilitymodel.cpp.o
+.PHONY : mobilitymodel.cpp.o
+
+mobilitymodel.i: mobilitymodel.cpp.i
+
+.PHONY : mobilitymodel.i
+
+# target to preprocess a source file
+mobilitymodel.cpp.i:
+	$(MAKE) -f CMakeFiles/MobilityModelCLI.dir/build.make CMakeFiles/MobilityModelCLI.dir/mobilitymodel.cpp.i
+.PHONY : mobilitymodel.cpp.i
+
+mobilitymodel.s: mobilitymodel.cpp.s
+
+.PHONY : mobilitymodel.s
+
+# target to generate assembly for a file
+mobilitymodel.cpp.s:
+	$(MAKE) -f CMakeFiles/MobilityModelCLI.dir/build.make CMakeFiles/MobilityModelCLI.dir/mobilitymodel.cpp.s
+.PHONY : mobilitymodel.cpp.s
+
 node.o: node.cpp.o
 
 .PHONY : node.o
@@ -300,6 +327,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mobilitymodel.o"
+	@echo "... mobilitymodel.i"
+	@echo "... mobilitymodel.s"
 	@echo "... node.o"
 	@echo "... node.i"
 	@echo "... node.s"

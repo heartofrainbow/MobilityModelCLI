@@ -91,6 +91,12 @@
 		<Unit filename="/home/nikki/CLionProjects/MobilityModelCLI/main.cpp">
 			<Option target="MobilityModelCLI"/>
 		</Unit>
+		<Unit filename="/home/nikki/CLionProjects/MobilityModelCLI/mobilitymodel.cpp">
+			<Option target="MobilityModelCLI"/>
+		</Unit>
+		<Unit filename="/home/nikki/CLionProjects/MobilityModelCLI/mobilitymodel.h">
+			<Option target="MobilityModelCLI"/>
+		</Unit>
 		<Unit filename="/home/nikki/CLionProjects/MobilityModelCLI/node.cpp">
 			<Option target="MobilityModelCLI"/>
 		</Unit>

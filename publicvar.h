@@ -2,6 +2,7 @@
 #define PUBLICVAR_H
 
 #include <random>
+#include "glm/vec3.hpp"
 
 
 using namespace std;
@@ -28,6 +29,8 @@ extern double alpha;
 
 extern random_device rd;
 extern default_random_engine e;
+
+extern glm::vec3* points;
 
 
 #endif // PUBLICVAR_H
