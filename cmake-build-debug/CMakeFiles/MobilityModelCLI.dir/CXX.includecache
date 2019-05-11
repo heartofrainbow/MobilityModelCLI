@@ -169,10 +169,18 @@ thread
 -
 unistd.h
 -
+stdarg.h
+-
+string
+-
 glm/vec3.hpp
 /home/nikki/CLionProjects/MobilityModelCLI/glm/vec3.hpp
 
 /home/nikki/CLionProjects/MobilityModelCLI/mobilitymodel.h
+iostream
+-
+stdarg.h
+-
 
 /home/nikki/CLionProjects/MobilityModelCLI/node.h
 publicvar.h

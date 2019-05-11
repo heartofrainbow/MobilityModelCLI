@@ -42,7 +42,8 @@ void random_direction_node::update(double time){   //parameter time is in second
     this->x += this->getv()*cos(this->getd())*sin(this->getp())*time;
     this->y += this->getv()*sin(this->getd())*sin(this->getp())*time;
     this->z += this->getv()*cos(this->getp())*time;
-    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
+//    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
+    points[this->id] = glm::vec3(this->x, this->y, this->z);
     if(reflected == true){
         sleep(interval);
         reflected = false;
@@ -115,7 +116,8 @@ void random_direction_node::run(){
     high_resolution_clock::time_point lastShow = lastUpdate;    //Time when random_direction_node info shown
     high_resolution_clock::time_point currentTime = high_resolution_clock::now();
     wholeTime = currentTime-baseTime;
-    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
+//    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
+    points[this->id] = glm::vec3(this->x, this->y, this->z);
     //initial output
     while(running == true){
         currentTime = high_resolution_clock::now();
