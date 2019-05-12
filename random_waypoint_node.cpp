@@ -47,6 +47,7 @@ void random_waypoint_node::update(double time){   //parameter time is in second
     this->z += this->getv()*cos(this->getp())*time;
 //    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
     points[this->id] = glm::vec3(this->x, this->y, this->z);
+    calc(this->id, this->x, this->y, this->z);    //这句是将xyz转换为wgs84坐标系
 }
 
 void random_waypoint_node::reflect(){      //err: 1 XMIN 2 XMAX 3 YMIN 4 YMAX
@@ -55,6 +56,7 @@ void random_waypoint_node::reflect(){      //err: 1 XMIN 2 XMAX 3 YMIN 4 YMAX
     this->z = destz;
 //    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
     points[this->id] = glm::vec3(this->x, this->y, this->z);
+    calc(this->id, this->x, this->y, this->z);    //这句是将xyz转换为wgs84坐标系
 //    usleep(interval*1000000);
     sleep(interval);
     lastErr=1;
@@ -91,6 +93,7 @@ void random_waypoint_node::run(){
     wholeTime = currentTime-baseTime;
 //    printf("ID=%d\t\tX=%f\t\tY=%f\t\tZ=%f\n",this->id,this->x,this->y,this->z);
     points[this->id] = glm::vec3(this->x, this->y, this->z);
+    calc(this->id, this->x, this->y, this->z);    //这句是将xyz转换为wgs84坐标系
     //initial output
     while(running == true){
         currentTime = high_resolution_clock::now();

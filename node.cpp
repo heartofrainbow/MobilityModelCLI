@@ -94,4 +94,5 @@ void node::calc(int id, double X, double Y, double Z){
     double height = p/cos(latitude) - N;
 //    points->replace(id,QVector3D(latitude,longitude,height));
     //DoSomething
+    points_wgs84[this->id] = glm::vec3(longitude,latitude,height);
 }

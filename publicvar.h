@@ -31,6 +31,7 @@ extern random_device rd;
 extern default_random_engine e;
 
 extern glm::vec3* points;
+extern glm::vec3* points_wgs84;
 
 
 #endif // PUBLICVAR_H

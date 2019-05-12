@@ -48,6 +48,7 @@ random_device rd;
 default_random_engine e(rd());
 
 glm::vec3* points;
+glm::vec3* points_wgs84;
 
 //void mobilitymodel(const char* modeltype,...){
 //
@@ -190,6 +191,7 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
     pmean = m_pmean;
     alpha = m_alpha;
     points = new glm::vec3[num_threads];
+    points_wgs84 = new glm::vec3[num_threads];
     thread t[num_threads];
     running = true; //关键语句，如果该变量为false则节点都原地不动，各线程结束
     //在编写程序时，请记得在程序运行结束后的处理语句中将running设为false以退出循环！
@@ -205,7 +207,7 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
     cout<<"相关系数α="<<alpha<<endl;
     thread pointsDisplayer([]{          //示例线程，每隔1s便输出第一个节点的位置，可按需修改
         while(true){
-            cout<<points[0].x<<"\t"<<points[0].y<<"\t"<<points[0].z<<endl;
+            cout<<"X="<<points[0].x<<"\tY="<<points[0].y<<"\tZ="<<points[0].z<<"\tLongitude="<<points_wgs84[0].x<<"\tLatitude="<<points_wgs84[0].y<<"\tHeight="<<points_wgs84[0].z<<endl;
             usleep(1000000);
         }
     });
