@@ -11,18 +11,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b6ca0d3-ac72-41e7-a9d2-fd977a381fd2" name="Default Changelist" comment="">
+    <list default="true" id="3b6ca0d3-ac72-41e7-a9d2-fd977a381fd2" name="Default Changelist" comment="Added the function of conversion from XYZ to Longitude,latitude&amp;height.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/gauss_markov_node.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/random_direction_node.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/random_waypoint_node.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gauss_markov_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gauss_markov_node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/node.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/random_walk_node.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MobilityModelCLI.dir/random_walk_node.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mobilitymodel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mobilitymodel.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publicvar.h" beforeDir="false" afterPath="$PROJECT_DIR$/publicvar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_direction_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/random_direction_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_walk_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/random_walk_node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_waypoint_node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/random_waypoint_node.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,10 +33,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobilitymodel.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="164" column="186" selection-start-line="164" selection-start-column="186" selection-end-line="164" selection-end-column="186" />
+              <folding>
+                <element signature="e#40#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobilitymodel.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="208" selection-start-line="18" selection-start-column="208" selection-end-line="18" selection-end-column="208" />
+            <state relative-caret-position="528">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#123#142#0" expanded="true" />
               </folding>
@@ -50,22 +57,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobilitymodel.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-              <folding>
-                <element signature="e#40#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/random_waypoint_node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
-              <caret line="95" column="70" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
+            <state relative-caret-position="2400">
+              <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
               <folding>
                 <element signature="e#25#58#0" expanded="true" />
               </folding>
@@ -74,36 +69,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gauss_markov_node.cpp">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="130" column="8" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="8" />
-              <folding>
-                <element signature="e#25#55#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="192">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node.cpp">
+        <entry file="file://$PROJECT_DIR$/random_direction_node.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="96" column="64" selection-start-line="96" selection-start-column="64" selection-end-line="96" selection-end-column="64" />
-              <folding>
-                <element signature="e#25#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="168">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/random_direction_node.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="46" column="8" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="8" />
+            <state relative-caret-position="264">
+              <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
               <folding>
-                <element signature="e#25#59#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/random_walk_node.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="432">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#130#147#0" expanded="true" />
@@ -133,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/publicvar.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
+            <state relative-caret-position="792">
               <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding>
                 <element signature="e#41#58#0" expanded="true" />
@@ -145,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/random_walk_node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="2448">
               <caret line="102" column="70" selection-start-line="102" selection-start-column="70" selection-end-line="102" selection-end-column="70" />
               <folding>
                 <element signature="e#68#97#0" expanded="true" />
@@ -160,6 +149,7 @@
     <findStrings>
       <find>points</find>
       <find>interval</find>
+      <find>calc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,14 +165,14 @@
         <option value="$PROJECT_DIR$/random_waypoint_node.h" />
         <option value="$PROJECT_DIR$/gauss_markov_node.h" />
         <option value="$PROJECT_DIR$/mobilitymodel.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/publicvar.h" />
         <option value="$PROJECT_DIR$/node.cpp" />
-        <option value="$PROJECT_DIR$/mobilitymodel.cpp" />
         <option value="$PROJECT_DIR$/gauss_markov_node.cpp" />
         <option value="$PROJECT_DIR$/random_direction_node.cpp" />
         <option value="$PROJECT_DIR$/random_walk_node.cpp" />
         <option value="$PROJECT_DIR$/random_waypoint_node.cpp" />
+        <option value="$PROJECT_DIR$/mobilitymodel.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -198,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,11 +196,14 @@
               <item name="MobilityModelCLI" type="b2602c69:ProjectViewProjectNode" />
               <item name="MobilityModelCLI" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MobilityModelCLI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,7 +250,10 @@
       <workItem from="1557548135488" duration="163000" />
       <workItem from="1557557748327" duration="4642000" />
       <workItem from="1557562426244" duration="2374000" />
-      <workItem from="1557681847816" duration="723000" />
+      <workItem from="1557681847816" duration="886000" />
+      <workItem from="1557718358279" duration="644000" />
+      <workItem from="1557732638384" duration="1155000" />
+      <workItem from="1557794910752" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="Introduced GLM for 3D Vector. The location of all nodes is stored in an array named &quot;points&quot;.">
       <created>1557402569101</created>
@@ -272,22 +269,29 @@
       <option name="project" value="LOCAL" />
       <updated>1557564513365</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added the function of conversion from XYZ to Longitude,latitude&amp;height.">
+      <created>1557682607811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557682607812</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28208000" />
+    <option name="totallyTimeSpent" value="30513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1034" extended-state="6" />
+    <frame x="-1" y="-1" width="1922" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27292112" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.282516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31919643" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31919643" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955357" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -312,7 +316,8 @@
     <MESSAGE value="Introduced GLM for 3D Vector" />
     <MESSAGE value="Introduced GLM for 3D Vector. The location of all nodes is stored in an array named &quot;points&quot;." />
     <MESSAGE value="The four mobility models are now accessible via a single function mobilitymodel(). Fixed some bugs." />
-    <option name="LAST_COMMIT_MESSAGE" value="The four mobility models are now accessible via a single function mobilitymodel(). Fixed some bugs." />
+    <MESSAGE value="Added the function of conversion from XYZ to Longitude,latitude&amp;height." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the function of conversion from XYZ to Longitude,latitude&amp;height." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -350,25 +355,8 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/random_waypoint.cpp" />
     <entry file="file://$PROJECT_DIR$/random_waypoint.h" />
-    <entry file="file://$PROJECT_DIR$/gauss_markov_node.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#58#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/glm/gtx/matrix_factorisation.inl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -379,6 +367,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gauss_markov_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3120">
+          <caret line="130" column="8" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="8" />
+          <folding>
+            <element signature="e#25#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gauss_markov_node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#58#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="96" column="64" selection-start-line="96" selection-start-column="64" selection-end-line="96" selection-end-column="64" />
+          <folding>
+            <element signature="e#25#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/random_direction_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="8" />
+          <folding>
+            <element signature="e#25#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/random_waypoint_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
+          <folding>
+            <element signature="e#25#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/random_direction_node.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -386,12 +431,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/random_walk_node.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="432">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#130#147#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -405,7 +450,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/publicvar.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
+        <state relative-caret-position="792">
           <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="e#41#58#0" expanded="true" />
@@ -413,69 +458,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobilitymodel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="208" selection-start-line="18" selection-start-column="208" selection-end-line="18" selection-end-column="208" />
-          <folding>
-            <element signature="e#123#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="96" column="64" selection-start-line="96" selection-start-column="64" selection-end-line="96" selection-end-column="64" />
-          <folding>
-            <element signature="e#25#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobilitymodel.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding>
-            <element signature="e#40#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gauss_markov_node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="130" column="8" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="8" />
-          <folding>
-            <element signature="e#25#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/random_direction_node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="8" />
-          <folding>
-            <element signature="e#25#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/random_walk_node.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#130#147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/random_walk_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="2448">
           <caret line="102" column="70" selection-start-line="102" selection-start-column="70" selection-end-line="102" selection-end-column="70" />
           <folding>
             <element signature="e#68#97#0" expanded="true" />
@@ -483,12 +468,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/random_waypoint_node.cpp">
+    <entry file="file://$PROJECT_DIR$/mobilitymodel.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="95" column="70" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
+        <state relative-caret-position="528">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#25#58#0" expanded="true" />
+            <element signature="e#123#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobilitymodel.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="164" column="186" selection-start-line="164" selection-start-column="186" selection-end-line="164" selection-end-column="186" />
+          <folding>
+            <element signature="e#40#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
