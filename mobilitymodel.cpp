@@ -119,14 +119,14 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
     }
     if(isGeo == true){
         double a[8][3];
-        rev_calc(XMIN,YMIN,ZMIN,a[0]);
-        rev_calc(XMIN,YMIN,ZMAX,a[1]);
-        rev_calc(XMIN,YMAX,ZMIN,a[2]);
-        rev_calc(XMIN,YMAX,ZMAX,a[3]);
-        rev_calc(XMAX,YMIN,ZMIN,a[4]);
-        rev_calc(XMAX,YMIN,ZMAX,a[5]);
-        rev_calc(XMAX,YMAX,ZMIN,a[6]);
-        rev_calc(XMAX,YMAX,ZMAX,a[7]);
+        rev_calc(xmin,ymin,zmin,a[0]);
+        rev_calc(xmin,ymin,zmax,a[1]);
+        rev_calc(xmin,ymax,zmin,a[2]);
+        rev_calc(xmin,ymax,zmax,a[3]);
+        rev_calc(xmax,ymin,zmin,a[4]);
+        rev_calc(xmax,ymin,zmax,a[5]);
+        rev_calc(xmax,ymax,zmin,a[6]);
+        rev_calc(xmax,ymax,zmax,a[7]);
         double min = a[0][0];
         double max = a[0][0];
         for(int i=0; i<8;i++){
@@ -221,14 +221,14 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
     }
     if(isGeo == true){
         double a[8][3];
-        rev_calc(XMIN,YMIN,ZMIN,a[0]);
-        rev_calc(XMIN,YMIN,ZMAX,a[1]);
-        rev_calc(XMIN,YMAX,ZMIN,a[2]);
-        rev_calc(XMIN,YMAX,ZMAX,a[3]);
-        rev_calc(XMAX,YMIN,ZMIN,a[4]);
-        rev_calc(XMAX,YMIN,ZMAX,a[5]);
-        rev_calc(XMAX,YMAX,ZMIN,a[6]);
-        rev_calc(XMAX,YMAX,ZMAX,a[7]);
+        rev_calc(xmin,ymin,zmin,a[0]);
+        rev_calc(xmin,ymin,zmax,a[1]);
+        rev_calc(xmin,ymax,zmin,a[2]);
+        rev_calc(xmin,ymax,zmax,a[3]);
+        rev_calc(xmax,ymin,zmin,a[4]);
+        rev_calc(xmax,ymin,zmax,a[5]);
+        rev_calc(xmax,ymax,zmin,a[6]);
+        rev_calc(xmax,ymax,zmax,a[7]);
         double min = a[0][0];
         double max = a[0][0];
         for(int i=0; i<8;i++){
@@ -314,4 +314,5 @@ void rev_calc(double longitude, double latitude, double height, double* res){
     res[0] = X;
     res[1] = Y;
     res[2] = Z;
+//    cout<<X<<"\t"<<Y<<"\t"<<Z<<endl;
 }
