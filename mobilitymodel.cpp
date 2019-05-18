@@ -110,20 +110,60 @@ void mobilitymodel(...){
     cout<<"所给参数不正确，请重新运行！"<<endl;
     return;
 }
-void mobilitymodel(string str, int num_threads, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax, double vmin, double vmax, double m_interval){
+void mobilitymodel(string str, int num_threads, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax, double vmin, double vmax, double m_interval, bool isGeo){
 //    if(str != "rw" || str != "rd" || str != "rwp"){
     if(str.compare("rw")!= 0 && str.compare("rd")!=0 && str.compare("rwp")!=0){ //compare函数，相同则返回0，不同则返回一个非0的数（不一定是1）
 //        cout<<"checkpoint 1 failed"<<endl;
         mobilitymodel();
         return;
     }
+    if(isGeo == true){
+        double a[8][3];
+        rev_calc(XMIN,YMIN,ZMIN,a[0]);
+        rev_calc(XMIN,YMIN,ZMAX,a[1]);
+        rev_calc(XMIN,YMAX,ZMIN,a[2]);
+        rev_calc(XMIN,YMAX,ZMAX,a[3]);
+        rev_calc(XMAX,YMIN,ZMIN,a[4]);
+        rev_calc(XMAX,YMIN,ZMAX,a[5]);
+        rev_calc(XMAX,YMAX,ZMIN,a[6]);
+        rev_calc(XMAX,YMAX,ZMAX,a[7]);
+        double min = a[0][0];
+        double max = a[0][0];
+        for(int i=0; i<8;i++){
+            if(a[0][i] < min) min = a[0][i];
+            if(a[0][i] > max) max = a[0][i];
+        }
+        XMIN = min;
+        XMAX = max;
+//        double m_x[2] = {min, max};
+//        min = a[1][0];
+//        max = a[1][0];
+        for(int i=0; i<8;i++){
+            if(a[1][i] < min) min = a[1][i];
+            if(a[1][i] > max) max = a[1][i];
+        }
+        YMIN = min;
+        YMAX = max;
+//        double m_y[2] = {min,max};
+//        min = a[2][0];
+//        max = a[2][0];
+        for(int i=0; i<8;i++){
+            if(a[2][i] < min) min = a[2][i];
+            if(a[2][i] > max) max = a[2][i];
+        }
+        ZMIN = min;
+        ZMAX = max;
+//        double m_z[2] = {min,max};
+    }
+    else{
+        XMIN = xmin;
+        XMAX = xmax;
+        YMIN = ymin;
+        YMAX = ymax;
+        ZMIN = zmin;
+        ZMAX = zmax;
+    }
     nNodes = num_threads;
-    XMIN = xmin;
-    XMAX = xmax;
-    YMIN = ymin;
-    YMAX = ymax;
-    ZMIN = zmin;
-    ZMAX = zmax;
     VMIN = vmin;
     VMAX = vmax;
     interval = m_interval;
@@ -173,19 +213,60 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
     pointsDisplayer.join();
 }
 
-void mobilitymodel(string str, int num_threads, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax, double vmin, double vmax, double m_vmean, double m_dmean, double m_pmean, double m_alpha){
+void mobilitymodel(string str, int num_threads, double xmin, double xmax, double ymin, double ymax, double zmin, double zmax, double vmin, double vmax, double m_vmean, double m_dmean, double m_pmean, double m_alpha, bool isGeo){
     if(str.compare("gm")!= 0 ){ //compare函数，相同则返回0，不同则返回一个非0的数（不一定是1）
 //        cout<<"checkpoint 1 failed"<<endl;
         mobilitymodel();
         return;
     }
+    if(isGeo == true){
+        double a[8][3];
+        rev_calc(XMIN,YMIN,ZMIN,a[0]);
+        rev_calc(XMIN,YMIN,ZMAX,a[1]);
+        rev_calc(XMIN,YMAX,ZMIN,a[2]);
+        rev_calc(XMIN,YMAX,ZMAX,a[3]);
+        rev_calc(XMAX,YMIN,ZMIN,a[4]);
+        rev_calc(XMAX,YMIN,ZMAX,a[5]);
+        rev_calc(XMAX,YMAX,ZMIN,a[6]);
+        rev_calc(XMAX,YMAX,ZMAX,a[7]);
+        double min = a[0][0];
+        double max = a[0][0];
+        for(int i=0; i<8;i++){
+            if(a[0][i] < min) min = a[0][i];
+            if(a[0][i] > max) max = a[0][i];
+        }
+        XMIN = min;
+        XMAX = max;
+//        double m_x[2] = {min, max};
+        min = a[1][0];  //重新初始化min和max这两个临时变量，下同
+        max = a[1][0];
+        for(int i=0; i<8;i++){
+            if(a[1][i] < min) min = a[1][i];
+            if(a[1][i] > max) max = a[1][i];
+        }
+        YMIN = min;
+        YMAX = max;
+//        double m_y[2] = {min,max};
+        min = a[2][0];
+        max = a[2][0];
+        for(int i=0; i<8;i++){
+            if(a[2][i] < min) min = a[2][i];
+            if(a[2][i] > max) max = a[2][i];
+        }
+        ZMIN = min;
+        ZMAX = max;
+//        double m_z[2] = {min,max};
+    }
+    else{
+        XMIN = xmin;
+        XMAX = xmax;
+        YMIN = ymin;
+        YMAX = ymax;
+        ZMIN = zmin;
+        ZMAX = zmax;
+    }
     nNodes = num_threads;
-    XMIN = xmin;
-    XMAX = xmax;
-    YMIN = ymin;
-    YMAX = ymax;
-    ZMIN = zmin;
-    ZMAX = zmax;
+
     VMIN = vmin;
     VMAX = vmax;
     vmean = m_vmean;
@@ -219,4 +300,18 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
     }
     pointsDisplayer.join();
 
+}
+
+void rev_calc(double longitude, double latitude, double height, double* res){
+    double _radiusEquator = 6378137;
+    double _radiusPolar =  6356752.3142;
+    double f = 1/298.257223563;
+    double _eccentricitySquared = 2*f - pow(f,2);
+    double N = _radiusEquator / sqrt( 1.0 - _eccentricitySquared*sin(latitude)*sin(latitude));
+    double X = (N + height)*cos(latitude)*cos(longitude);
+    double Y = (N + height)*cos(latitude)*sin(longitude);
+    double Z = (N*(1-_eccentricitySquared) + height)*sin(latitude);
+    res[0] = X;
+    res[1] = Y;
+    res[2] = Z;
 }
