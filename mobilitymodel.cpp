@@ -117,7 +117,7 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
         mobilitymodel();
         return;
     }
-    if(isGeo == true){
+    if(isGeo == true){ //将经纬高的范围转化为XYZ的范围
         double a[8][3];
         rev_calc(xmin,ymin,zmin,a[0]);
         rev_calc(xmin,ymin,zmax,a[1]);
@@ -219,7 +219,7 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
         mobilitymodel();
         return;
     }
-    if(isGeo == true){
+    if(isGeo == true){  //将经纬高的范围转化为XYZ的范围
         double a[8][3];
         rev_calc(xmin,ymin,zmin,a[0]);
         rev_calc(xmin,ymin,zmax,a[1]);
@@ -232,26 +232,26 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
         double min = a[0][0];
         double max = a[0][0];
         for(int i=0; i<8;i++){
-            if(a[0][i] < min) min = a[0][i];
-            if(a[0][i] > max) max = a[0][i];
+            if(a[i][0] < min) min = a[i][0];
+            if(a[i][0] > max) max = a[i][0];
         }
         XMIN = min;
         XMAX = max;
 //        double m_x[2] = {min, max};
-        min = a[1][0];  //重新初始化min和max这两个临时变量，下同
-        max = a[1][0];
+        min = a[0][1];  //重新初始化min和max这两个临时变量，下同
+        max = a[0][1];
         for(int i=0; i<8;i++){
-            if(a[1][i] < min) min = a[1][i];
-            if(a[1][i] > max) max = a[1][i];
+            if(a[i][1] < min) min = a[i][1];
+            if(a[i][1] > max) max = a[i][1];
         }
         YMIN = min;
         YMAX = max;
 //        double m_y[2] = {min,max};
-        min = a[2][0];
-        max = a[2][0];
+        min = a[0][2];
+        max = a[0][2];
         for(int i=0; i<8;i++){
-            if(a[2][i] < min) min = a[2][i];
-            if(a[2][i] > max) max = a[2][i];
+            if(a[i][2] < min) min = a[i][2];
+            if(a[i][2] > max) max = a[i][2];
         }
         ZMIN = min;
         ZMAX = max;
@@ -302,7 +302,7 @@ void mobilitymodel(string str, int num_threads, double xmin, double xmax, double
 
 }
 
-void rev_calc(double longitude, double latitude, double height, double* res){
+void rev_calc(double longitude, double latitude, double height, double* res){   //将经纬高（WGS84）转化为XYZ
     double _radiusEquator = 6378137;
     double _radiusPolar =  6356752.3142;
     double f = 1/298.257223563;
@@ -310,9 +310,9 @@ void rev_calc(double longitude, double latitude, double height, double* res){
     double N = _radiusEquator / sqrt( 1.0 - _eccentricitySquared*sin(latitude)*sin(latitude));
     double X = (N + height)*cos(latitude)*cos(longitude);
     double Y = (N + height)*cos(latitude)*sin(longitude);
-    double Z = (N*(1-_eccentricitySquared) + height)*sin(latitude);
+    double Z = (N*(1.0-_eccentricitySquared) + height)*sin(latitude);
     res[0] = X;
     res[1] = Y;
     res[2] = Z;
-//    cout<<X<<"\t"<<Y<<"\t"<<Z<<endl;
+    cout<<X<<"\t"<<Y<<"\t"<<Z<<endl;
 }
